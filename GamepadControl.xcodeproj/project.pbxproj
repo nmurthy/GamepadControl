@@ -3,18 +3,20 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 63;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		312A01962BE4073C00D1D6CC /* OSCKit in Frameworks */ = {isa = PBXBuildFile; productRef = 312A01952BE4073C00D1D6CC /* OSCKit */; };
+		312A01982BE4073C00D1D6CC /* OSCKitCore in Frameworks */ = {isa = PBXBuildFile; productRef = 312A01972BE4073C00D1D6CC /* OSCKitCore */; };
+		312A019A2BE4074500D1D6CC /* AudioKitUI in Frameworks */ = {isa = PBXBuildFile; productRef = 312A01992BE4074500D1D6CC /* AudioKitUI */; };
+		312A019C2BE4084B00D1D6CC /* OSCKit in Frameworks */ = {isa = PBXBuildFile; productRef = 312A019B2BE4084B00D1D6CC /* OSCKit */; };
+		312A019E2BE4084B00D1D6CC /* OSCKitCore in Frameworks */ = {isa = PBXBuildFile; productRef = 312A019D2BE4084B00D1D6CC /* OSCKitCore */; };
 		842DD5452BBB641300935F6C /* OSCReceiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842DD5442BBB641300935F6C /* OSCReceiver.swift */; };
 		842DD5472BBB643800935F6C /* Gamepad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842DD5462BBB643800935F6C /* Gamepad.swift */; };
 		842DD5492BBB645300935F6C /* TrackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842DD5482BBB645300935F6C /* TrackView.swift */; };
 		843926B82BD1277E0063C8DE /* RoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843926B72BD1277E0063C8DE /* RoomView.swift */; };
 		845ABC932B8F3D6A00DB1B17 /* NOTES.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845ABC922B8F3D6A00DB1B17 /* NOTES.swift */; };
-		847C40572BBCB16E00A385E7 /* AudioKitUI in Frameworks */ = {isa = PBXBuildFile; productRef = 847C40562BBCB16E00A385E7 /* AudioKitUI */; };
-		847C405A2BBCB17700A385E7 /* OSCKit in Frameworks */ = {isa = PBXBuildFile; productRef = 847C40592BBCB17700A385E7 /* OSCKit */; };
-		847C405C2BBCB17700A385E7 /* OSCKitCore in Frameworks */ = {isa = PBXBuildFile; productRef = 847C405B2BBCB17700A385E7 /* OSCKitCore */; };
 		849282F02B8C83FB00064503 /* GamepadControlApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849282EF2B8C83FB00064503 /* GamepadControlApp.swift */; };
 		849282F22B8C83FB00064503 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849282F12B8C83FB00064503 /* ContentView.swift */; };
 		849282F42B8C83FD00064503 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 849282F32B8C83FD00064503 /* Assets.xcassets */; };
@@ -42,20 +44,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				847C40572BBCB16E00A385E7 /* AudioKitUI in Frameworks */,
-				847C405A2BBCB17700A385E7 /* OSCKit in Frameworks */,
-				847C405C2BBCB17700A385E7 /* OSCKitCore in Frameworks */,
+				312A01982BE4073C00D1D6CC /* OSCKitCore in Frameworks */,
+				312A019E2BE4084B00D1D6CC /* OSCKitCore in Frameworks */,
+				312A019A2BE4074500D1D6CC /* AudioKitUI in Frameworks */,
+				312A01962BE4073C00D1D6CC /* OSCKit in Frameworks */,
+				312A019C2BE4084B00D1D6CC /* OSCKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		312A01942BE4073100D1D6CC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		849282E32B8C83FB00064503 = {
 			isa = PBXGroup;
 			children = (
 				849282EE2B8C83FB00064503 /* GamepadControl */,
 				849282ED2B8C83FB00064503 /* Products */,
+				312A01942BE4073100D1D6CC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -110,9 +122,11 @@
 			);
 			name = GamepadControl;
 			packageProductDependencies = (
-				847C40562BBCB16E00A385E7 /* AudioKitUI */,
-				847C40592BBCB17700A385E7 /* OSCKit */,
-				847C405B2BBCB17700A385E7 /* OSCKitCore */,
+				312A01952BE4073C00D1D6CC /* OSCKit */,
+				312A01972BE4073C00D1D6CC /* OSCKitCore */,
+				312A01992BE4074500D1D6CC /* AudioKitUI */,
+				312A019B2BE4084B00D1D6CC /* OSCKit */,
+				312A019D2BE4084B00D1D6CC /* OSCKitCore */,
 			);
 			productName = GamepadControl;
 			productReference = 849282EC2B8C83FB00064503 /* GamepadControl.app */;
@@ -134,7 +148,7 @@
 				};
 			};
 			buildConfigurationList = 849282E72B8C83FB00064503 /* Build configuration list for PBXProject "GamepadControl" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 15.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -312,12 +326,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = GamepadControl/GamepadControl.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"GamepadControl/Preview Content\"";
-				DEVELOPMENT_TEAM = MMW492ELYY;
+				DEVELOPMENT_TEAM = 3PX7ZPJGYF;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -340,12 +355,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = GamepadControl/GamepadControl.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"GamepadControl/Preview Content\"";
-				DEVELOPMENT_TEAM = MMW492ELYY;
+				DEVELOPMENT_TEAM = 3PX7ZPJGYF;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -405,19 +421,25 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		847C40562BBCB16E00A385E7 /* AudioKitUI */ = {
+		312A01952BE4073C00D1D6CC /* OSCKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = OSCKit;
+		};
+		312A01972BE4073C00D1D6CC /* OSCKitCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = OSCKitCore;
+		};
+		312A01992BE4074500D1D6CC /* AudioKitUI */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 847C40552BBCB16E00A385E7 /* XCRemoteSwiftPackageReference "AudioKitUI" */;
 			productName = AudioKitUI;
 		};
-		847C40592BBCB17700A385E7 /* OSCKit */ = {
+		312A019B2BE4084B00D1D6CC /* OSCKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 847C40582BBCB17700A385E7 /* XCRemoteSwiftPackageReference "OSCKit" */;
 			productName = OSCKit;
 		};
-		847C405B2BBCB17700A385E7 /* OSCKitCore */ = {
+		312A019D2BE4084B00D1D6CC /* OSCKitCore */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 847C40582BBCB17700A385E7 /* XCRemoteSwiftPackageReference "OSCKit" */;
 			productName = OSCKitCore;
 		};
 /* End XCSwiftPackageProductDependency section */
